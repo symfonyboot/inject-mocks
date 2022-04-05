@@ -1,5 +1,9 @@
 # Inject-Mocks
 
+[![Tests](https://github.com/symfonyboot/inject-mocks/actions/workflows/tests.yml/badge.svg)](https://github.com/symfonyboot/inject-mocks/actions/workflows/tests.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/072d45a8bfb8316296b7/maintainability)](https://codeclimate.com/github/symfonyboot/inject-mocks/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/072d45a8bfb8316296b7/test_coverage)](https://codeclimate.com/github/symfonyboot/inject-mocks/test_coverage)
+
 Injeção automática de mocks nos sujeitos de testes através das annotations @InjectMocks e @Mock, para agilizar e
 facilitar a manutenção de testes unitários com PHPUnit.
 

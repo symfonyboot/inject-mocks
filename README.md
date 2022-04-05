@@ -1,5 +1,9 @@
 # Inject-Mocks
 
+[![Tests](https://github.com/symfonyboot/inject-mocks/actions/workflows/tests.yml/badge.svg)](https://github.com/symfonyboot/inject-mocks/actions/workflows/tests.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/072d45a8bfb8316296b7/maintainability)](https://codeclimate.com/github/symfonyboot/inject-mocks/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/072d45a8bfb8316296b7/test_coverage)](https://codeclimate.com/github/symfonyboot/inject-mocks/test_coverage)
+
 Automatic injection of mocks into test subjects via @InjectMocks and @Mock annotations, to speed up unit testing with
 PHPUnit.
 
