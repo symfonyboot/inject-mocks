@@ -105,7 +105,7 @@ subject via the constructor, and will also be available in the scope of the test
 
 ### Details
 
-1. Scope of Annotations
+#### 1. Scope of Annotations
 
 - Both @InjectMocks and @Mock MUST be placed over a TYPED property in a TestCase class;
 - Properties that receive @InjectMocks and @Mock annotations MUST be an object;
@@ -114,11 +114,11 @@ subject via the constructor, and will also be available in the scope of the test
 - You MUST use a @Mock annotation for each test subject dependency you want to mock;
 - Using annotations on untyped properties or on primitive types will cause a `MockInjectException` exception.
 
-2. Behaviors
+#### 2. Behaviors
 
 @InjectMocks and @Mock work independently and alone, or together. Details about each one:
 
-2.1 @InjectMocks
+##### 2.1. @InjectMocks
 
 It will create a real instance through the constructor, and if there are parameters in the constructor, the following
 value will be used in each parameter, in this order:
@@ -132,7 +132,7 @@ value will be used in each parameter, in this order:
 
 Obs.: You can use @Mock annotation on all, some or none of the test subject's dependencies.
 
-2.1 @Mock
+##### 2.2. @Mock
 
 Will create a `mock` injected into the TestCase scope, without using the constructor. This creation behavior is
 identical to `TestCase::createMock()`.

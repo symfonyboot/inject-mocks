@@ -106,7 +106,7 @@ construtor, e também estarão disponíveis no escopo da classe de teste.
 
 ### Detalhes
 
-1. Escopo das Anotações
+#### 1. Escopo das Anotações
 
 - Tanto @InjectMocks quanto @Mock DEVEM ser colocadas sobre uma propriedade TIPADA em uma classe TestCase;
 - As propriedades que recebem as anotações @InjectMocks e @Mock DEVEM ser um objeto;
@@ -115,11 +115,11 @@ construtor, e também estarão disponíveis no escopo da classe de teste.
 - Você DEVE utilizar uma anotação @Mock para cada dependência do sujeito do teste que você deseja dublar;
 - Usar as anotações sobre propriedades não-tipadas ou sobre tipos primitivos causará uma exceção `MockInjectException`.
 
-2. Comportamento das anotações
+#### 2. Comportamento das anotações
 
 @InjectMocks e @Mock funcionam independentemente e isoladamente, ou conjuntamente. Detalhes sobre cada uma:
 
-2.1 @InjectMocks
+##### 2.1. @InjectMocks
 
 Criará uma instância real através do construtor, e caso hajam parâmetros no construtor, utilizará como valor para cada
 parâmetro, nesta ordem:
@@ -132,7 +132,7 @@ parâmetro, nesta ordem:
 
 Obs.: você pode utilizar conjuntamente a anotação @Mock sobre todas, algumas ou nenhuma dependência do sujeito do teste.
 
-2.1 @Mock
+##### 2.2. @Mock
 
 Criará um `mock` injetado no escopo do TestCase, sem utilizar o construtor. O comportamento desta criação é idêntico ao
 `TestCase::createMock()`.
