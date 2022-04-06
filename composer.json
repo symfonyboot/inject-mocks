@@ -1,7 +1,7 @@
 {
     "name": "symfonyboot/inject-mocks",
     "description": "Automatic injection of mocks into test subjects via @InjectMocks and @Mock annotations, to speed up unit testing with PHPUnit.",
-    "keywords": ["inject-mocks", "mocks", "tests", "annotations", "phpunit"],
+    "keywords": ["inject-mocks", "mocks", "tests", "testing-tools", "annotations", "phpunit"],
     "type": "library",
     "license": "MIT",
     "authors": [
