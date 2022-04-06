@@ -21,8 +21,10 @@ Read the English :us: version [here](README.md).
 
 ## Instalação
 
+Para instalar no ambiente de desenvolvimento:
+
 ```sh
-composer require symfonyboot/inject-mocks
+composer require --dev symfonyboot/inject-mocks
 ```
 
 ## Pré-requisitos
