@@ -1,6 +1,6 @@
 <?php
 
-namespace SymfonyBoot\InjectMocks\Tests\TestCombinationsOfAnnotations\Classes;
+namespace SilasYudi\InjectMocks\Tests\TestCombinationsOfAnnotations\Classes;
 
 class Service
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace SymfonyBoot\InjectMocks\Tests\TestWithoutType;
+namespace SilasYudi\InjectMocks\Tests\TestWithoutType;
 
 use PHPUnit\Framework\TestCase;
-use SymfonyBoot\InjectMocks\InjectMocks;
-use SymfonyBoot\InjectMocks\Mock;
-use SymfonyBoot\InjectMocks\MockInjectException;
-use SymfonyBoot\InjectMocks\MockInjector;
-use SymfonyBoot\InjectMocks\Tests\TestWithoutType\Classes\Service;
+use SilasYudi\InjectMocks\InjectMocks;
+use SilasYudi\InjectMocks\Mock;
+use SilasYudi\InjectMocks\MockInjectException;
+use SilasYudi\InjectMocks\MockInjector;
+use SilasYudi\InjectMocks\Tests\TestWithoutType\Classes\Service;
 
 class WithoutMockTypeTest extends TestCase
 {

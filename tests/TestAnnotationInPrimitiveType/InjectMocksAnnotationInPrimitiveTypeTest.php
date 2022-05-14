@@ -1,11 +1,11 @@
 <?php
 
-namespace SymfonyBoot\InjectMocks\Tests\TestAnnotationInPrimitiveType;
+namespace SilasYudi\InjectMocks\Tests\TestAnnotationInPrimitiveType;
 
 use PHPUnit\Framework\TestCase;
-use SymfonyBoot\InjectMocks\InjectMocks;
-use SymfonyBoot\InjectMocks\MockInjectException;
-use SymfonyBoot\InjectMocks\MockInjector;
+use SilasYudi\InjectMocks\InjectMocks;
+use SilasYudi\InjectMocks\MockInjectException;
+use SilasYudi\InjectMocks\MockInjector;
 
 class InjectMocksAnnotationInPrimitiveTypeTest extends TestCase
 {

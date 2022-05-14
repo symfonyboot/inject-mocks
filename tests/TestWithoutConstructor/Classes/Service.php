@@ -1,6 +1,6 @@
 <?php
 
-namespace SymfonyBoot\InjectMocks\Tests\TestWithoutConstructor\Classes;
+namespace SilasYudi\InjectMocks\Tests\TestWithoutConstructor\Classes;
 
 class Service
 {

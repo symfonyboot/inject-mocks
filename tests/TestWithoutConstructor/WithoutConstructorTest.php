@@ -1,15 +1,15 @@
 <?php
 
-namespace SymfonyBoot\InjectMocks\Tests\TestWithoutConstructor;
+namespace SilasYudi\InjectMocks\Tests\TestWithoutConstructor;
 
 use PHPUnit\Framework\TestCase;
-use SymfonyBoot\InjectMocks\InjectMocks;
-use SymfonyBoot\InjectMocks\Mock;
-use SymfonyBoot\InjectMocks\MockInjectException;
-use SymfonyBoot\InjectMocks\MockInjector;
-use SymfonyBoot\InjectMocks\Tests\TestWithoutConstructor\Classes\DependencyA;
-use SymfonyBoot\InjectMocks\Tests\TestWithoutConstructor\Classes\DependencyB;
-use SymfonyBoot\InjectMocks\Tests\TestWithoutConstructor\Classes\Service;
+use SilasYudi\InjectMocks\InjectMocks;
+use SilasYudi\InjectMocks\Mock;
+use SilasYudi\InjectMocks\MockInjectException;
+use SilasYudi\InjectMocks\MockInjector;
+use SilasYudi\InjectMocks\Tests\TestWithoutConstructor\Classes\DependencyA;
+use SilasYudi\InjectMocks\Tests\TestWithoutConstructor\Classes\DependencyB;
+use SilasYudi\InjectMocks\Tests\TestWithoutConstructor\Classes\Service;
 
 class WithoutConstructorTest extends TestCase
 {

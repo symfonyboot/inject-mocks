@@ -1,12 +1,12 @@
 <?php
 
-namespace SymfonyBoot\InjectMocks;
+namespace SilasYudi\InjectMocks;
 
 use Doctrine\Common\Annotations\AnnotationReader;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 use ReflectionProperty;
-use SymfonyBoot\Optional\Optional;
+use SilasYudi\Optional\Optional;
 
 class MockInjector
 {

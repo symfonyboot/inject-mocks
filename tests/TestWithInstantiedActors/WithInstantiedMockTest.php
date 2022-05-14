@@ -1,14 +1,14 @@
 <?php
 
-namespace SymfonyBoot\InjectMocks\Tests\TestWithInstantiedActors;
+namespace SilasYudi\InjectMocks\Tests\TestWithInstantiedActors;
 
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
-use SymfonyBoot\InjectMocks\InjectMocks;
-use SymfonyBoot\InjectMocks\Mock;
-use SymfonyBoot\InjectMocks\MockInjector;
-use SymfonyBoot\InjectMocks\Tests\TestWithInstantiedActors\Classes\Dependency;
-use SymfonyBoot\InjectMocks\Tests\TestWithInstantiedActors\Classes\Service;
+use SilasYudi\InjectMocks\InjectMocks;
+use SilasYudi\InjectMocks\Mock;
+use SilasYudi\InjectMocks\MockInjector;
+use SilasYudi\InjectMocks\Tests\TestWithInstantiedActors\Classes\Dependency;
+use SilasYudi\InjectMocks\Tests\TestWithInstantiedActors\Classes\Service;
 
 class WithInstantiedMockTest extends TestCase
 {

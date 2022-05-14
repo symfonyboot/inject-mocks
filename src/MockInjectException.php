@@ -1,6 +1,6 @@
 <?php
 
-namespace SymfonyBoot\InjectMocks;
+namespace SilasYudi\InjectMocks;
 
 use RuntimeException;
 

@@ -1,8 +1,8 @@
 # Inject-Mocks
 
-[![Tests](https://github.com/symfonyboot/inject-mocks/actions/workflows/tests.yml/badge.svg)](https://github.com/symfonyboot/inject-mocks/actions/workflows/tests.yml)
-[![Maintainability](https://api.codeclimate.com/v1/badges/072d45a8bfb8316296b7/maintainability)](https://codeclimate.com/github/symfonyboot/inject-mocks/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/072d45a8bfb8316296b7/test_coverage)](https://codeclimate.com/github/symfonyboot/inject-mocks/test_coverage)
+[![Tests](https://github.com/silasyudi/inject-mocks/actions/workflows/tests.yml/badge.svg)](https://github.com/silasyudi/inject-mocks/actions/workflows/tests.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/b89bc606334c7edec92e/maintainability)](https://codeclimate.com/github/silasyudi/inject-mocks/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/b89bc606334c7edec92e/test_coverage)](https://codeclimate.com/github/silasyudi/inject-mocks/test_coverage)
 
 Automatic injection of mocks into test subjects via @InjectMocks and @Mock annotations, to speed up unit testing with
 PHPUnit.
@@ -24,7 +24,7 @@ Leia a versão em português :brazil: [aqui](README_PT_BR.md).
 To install in the development environment:
 
 ```sh
-composer require --dev symfonyboot/inject-mocks
+composer require --dev silasyudi/inject-mocks
 ```
 
 ## Requirements
@@ -63,9 +63,9 @@ With the @InjectMocks/@Mock annotations, we abstract these test subject changes.
 ### Example with @InjectMocks/@Mock:
 
 ```php
-use SymfonyBoot\InjectMocks\InjectMocks;
-use SymfonyBoot\InjectMocks\Mock;
-use SymfonyBoot\InjectMocks\MockInjector;
+use SilasYudi\InjectMocks\InjectMocks;
+use SilasYudi\InjectMocks\Mock;
+use SilasYudi\InjectMocks\MockInjector;
 
 class SomeTest extends \PHPUnit\Framework\TestCase
 {

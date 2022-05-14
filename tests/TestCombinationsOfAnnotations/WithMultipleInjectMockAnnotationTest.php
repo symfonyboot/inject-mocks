@@ -1,15 +1,15 @@
 <?php
 
-namespace SymfonyBoot\InjectMocks\Tests\TestCombinationsOfAnnotations;
+namespace SilasYudi\InjectMocks\Tests\TestCombinationsOfAnnotations;
 
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
-use SymfonyBoot\InjectMocks\InjectMocks;
-use SymfonyBoot\InjectMocks\Mock;
-use SymfonyBoot\InjectMocks\MockInjector;
-use SymfonyBoot\InjectMocks\Tests\TestCombinationsOfAnnotations\Classes\DependencyA;
-use SymfonyBoot\InjectMocks\Tests\TestCombinationsOfAnnotations\Classes\DependencyB;
-use SymfonyBoot\InjectMocks\Tests\TestCombinationsOfAnnotations\Classes\Service;
+use SilasYudi\InjectMocks\InjectMocks;
+use SilasYudi\InjectMocks\Mock;
+use SilasYudi\InjectMocks\MockInjector;
+use SilasYudi\InjectMocks\Tests\TestCombinationsOfAnnotations\Classes\DependencyA;
+use SilasYudi\InjectMocks\Tests\TestCombinationsOfAnnotations\Classes\DependencyB;
+use SilasYudi\InjectMocks\Tests\TestCombinationsOfAnnotations\Classes\Service;
 
 class WithMultipleInjectMockAnnotationTest extends TestCase
 {

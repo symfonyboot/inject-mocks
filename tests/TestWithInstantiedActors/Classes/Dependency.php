@@ -1,6 +1,6 @@
 <?php
 
-namespace SymfonyBoot\InjectMocks\Tests\TestWithInstantiedActors\Classes;
+namespace SilasYudi\InjectMocks\Tests\TestWithInstantiedActors\Classes;
 
 class Dependency
 {

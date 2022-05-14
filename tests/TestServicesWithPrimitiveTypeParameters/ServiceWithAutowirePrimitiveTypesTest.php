@@ -1,12 +1,12 @@
 <?php
 
-namespace SymfonyBoot\InjectMocks\Tests\TestServicesWithPrimitiveTypeParameters;
+namespace SilasYudi\InjectMocks\Tests\TestServicesWithPrimitiveTypeParameters;
 
 use PHPUnit\Framework\TestCase;
-use SymfonyBoot\InjectMocks\InjectMocks;
-use SymfonyBoot\InjectMocks\MockInjectException;
-use SymfonyBoot\InjectMocks\MockInjector;
-use SymfonyBoot\InjectMocks\Tests\TestServicesWithPrimitiveTypeParameters\Classes\ServiceWithAutowirePrimitiveType;
+use SilasYudi\InjectMocks\InjectMocks;
+use SilasYudi\InjectMocks\MockInjectException;
+use SilasYudi\InjectMocks\MockInjector;
+use SilasYudi\InjectMocks\Tests\TestServicesWithPrimitiveTypeParameters\Classes\ServiceWithAutowirePrimitiveType;
 
 class ServiceWithAutowirePrimitiveTypesTest extends TestCase
 {

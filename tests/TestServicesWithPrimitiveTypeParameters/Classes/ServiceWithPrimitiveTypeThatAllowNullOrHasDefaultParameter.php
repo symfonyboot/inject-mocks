@@ -1,6 +1,6 @@
 <?php
 
-namespace SymfonyBoot\InjectMocks\Tests\TestServicesWithPrimitiveTypeParameters\Classes;
+namespace SilasYudi\InjectMocks\Tests\TestServicesWithPrimitiveTypeParameters\Classes;
 
 use DateTime;
 use stdClass;

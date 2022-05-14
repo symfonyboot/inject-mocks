@@ -1,12 +1,12 @@
 <?php
 
-namespace SymfonyBoot\InjectMocks\Tests\TestCombinationsOfAnnotations;
+namespace SilasYudi\InjectMocks\Tests\TestCombinationsOfAnnotations;
 
 use PHPUnit\Framework\TestCase;
-use SymfonyBoot\InjectMocks\MockInjector;
-use SymfonyBoot\InjectMocks\Tests\TestCombinationsOfAnnotations\Classes\DependencyA;
-use SymfonyBoot\InjectMocks\Tests\TestCombinationsOfAnnotations\Classes\DependencyB;
-use SymfonyBoot\InjectMocks\Tests\TestCombinationsOfAnnotations\Classes\Service;
+use SilasYudi\InjectMocks\MockInjector;
+use SilasYudi\InjectMocks\Tests\TestCombinationsOfAnnotations\Classes\DependencyA;
+use SilasYudi\InjectMocks\Tests\TestCombinationsOfAnnotations\Classes\DependencyB;
+use SilasYudi\InjectMocks\Tests\TestCombinationsOfAnnotations\Classes\Service;
 
 class WithoutAnyAnnotationTest extends TestCase
 {

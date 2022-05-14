@@ -1,6 +1,6 @@
 <?php
 
-namespace SymfonyBoot\InjectMocks;
+namespace SilasYudi\InjectMocks;
 
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
