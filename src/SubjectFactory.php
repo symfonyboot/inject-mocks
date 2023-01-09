@@ -34,10 +34,11 @@ class SubjectFactory
     private static function organizeValues(ReflectionMethod $constructor, array $mocks): array
     {
         $parameters = $constructor->getParameters();
+        $hasParametersWithSameType = self::hasParametersWithSameType($parameters);
         $values = [];
 
         foreach ($parameters as $parameter) {
-            $values[] = self::findMock($parameter, $mocks);
+            $values[] = self::findMock($parameter, $mocks, $hasParametersWithSameType);
         }
 
         return $values;
@@ -46,14 +47,21 @@ class SubjectFactory
     /**
      * @param ReflectionParameter $parameter
      * @param TestActor[] $mocks
+     * @param bool $hasMockableParametersWithSameType
      * @return mixed
      */
-    private static function findMock(ReflectionParameter $parameter, array $mocks)
-    {
+    private static function findMock(
+        ReflectionParameter $parameter,
+        array $mocks,
+        bool $hasMockableParametersWithSameType
+    ) {
         $type = $parameter->getType()->getName();
 
         foreach ($mocks as $mock) {
-            if ($mock->getType() == $type) {
+            if (
+                $mock->getType() == $type
+                && (!$hasMockableParametersWithSameType || $mock->getParameter() == $parameter->getName())
+            ) {
                 return $mock->getInstance();
             }
         }
@@ -71,5 +79,22 @@ class SubjectFactory
         }
 
         throw new MockInjectException('Cannot autowire primitive type.');
+    }
+
+    /**
+     * @param ReflectionParameter[] $parameters
+     * @return bool
+     */
+    private static function hasParametersWithSameType(array $parameters): bool
+    {
+        $mockableParameters = array_filter($parameters, function (ReflectionParameter $parameter) {
+            return !$parameter->getType()->isBuiltin();
+        });
+
+        $mockableTypes = array_map(function (ReflectionParameter $parameter) {
+            return $parameter->getType()->getName();
+        }, $mockableParameters);
+
+        return count($mockableTypes) !== count(array_unique($mockableTypes));
     }
 }

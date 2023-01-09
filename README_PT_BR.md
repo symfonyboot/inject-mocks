@@ -116,6 +116,8 @@ construtor, e também estarão disponíveis no escopo da classe de teste.
   biblioteca utilizará apenas a primeira, e ignorará as demais;
 - Você DEVE utilizar uma anotação @Mock para cada dependência do sujeito do teste que você deseja dublar;
 - Usar as anotações sobre propriedades não-tipadas ou sobre tipos primitivos causará uma exceção `MockInjectException`.
+- Ao usar @Mock em mais de um objeto do mesmo tipo na mesma classe de teste, esta biblioteca irá corresponder cada um
+  através dos nomes das propriedades, que DEVERÃO ser idênticas à da classe do sujeito do teste.
 
 #### 2. Comportamento das anotações
 

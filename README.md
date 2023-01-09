@@ -111,10 +111,12 @@ subject via the constructor, and will also be available in the scope of the test
 
 - Both @InjectMocks and @Mock MUST be placed over a TYPED property in a TestCase class;
 - Properties that receive @InjectMocks and @Mock annotations MUST be an object;
-- You MUST use only one @InjectMocks annotation per TestCase. When using more than one in the same scope, this library
+- You MUST use only one @InjectMocks annotation per TestCase. When using more than one on the same scope, this library
   will use only the first one, and ignore the others;
 - You MUST use a @Mock annotation for each test subject dependency you want to mock;
 - Using annotations on untyped properties or on primitive types will cause a `MockInjectException` exception.
+- When using @Mock on more than one object of the same type in the same test class, this library will match each one
+  via property names, which MUST be identical to the test subject class.
 
 #### 2. Behaviors
 
