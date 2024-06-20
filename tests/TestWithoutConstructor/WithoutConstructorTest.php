@@ -13,11 +13,11 @@ use SilasYudi\InjectMocks\Tests\TestWithoutConstructor\Classes\Service;
 
 class WithoutConstructorTest extends TestCase
 {
-    /** @Mock */
+    #[Mock]
     private DependencyA $dependencyA;
-    /** @Mock */
+    #[Mock]
     private DependencyB $dependencyB;
-    /** @InjectMocks */
+    #[InjectMocks]
     private Service $service;
 
     public function testWithoutConstructorShouldThrowMockInjectException(): void

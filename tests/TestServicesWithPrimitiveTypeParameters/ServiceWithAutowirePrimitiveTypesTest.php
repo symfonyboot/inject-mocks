@@ -10,7 +10,7 @@ use SilasYudi\InjectMocks\Tests\TestServicesWithPrimitiveTypeParameters\Classes\
 
 class ServiceWithAutowirePrimitiveTypesTest extends TestCase
 {
-    /** @InjectMocks */
+    #[InjectMocks]
     private ServiceWithAutowirePrimitiveType $service;
 
     public function testServiceWithAutowirePrimitiveTypesShouldThrowMockInjectException(): void

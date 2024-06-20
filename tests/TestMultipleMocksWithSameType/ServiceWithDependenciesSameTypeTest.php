@@ -11,13 +11,13 @@ use SilasYudi\InjectMocks\Tests\TestMultipleMocksWithSameType\Classes\Service;
 
 class ServiceWithDependenciesSameTypeTest extends TestCase
 {
-    /** @Mock */
+    #[Mock]
     private Dependency $dependencyOne;
-    /** @Mock */
+    #[Mock]
     private Dependency $dependencyTwo;
-    /** @Mock */
+    #[Mock]
     private Dependency $dependencyThree;
-    /** @InjectMocks */
+    #[InjectMocks]
     private Service $service;
 
     public function testServiceWithDependenciesSameTypeTest(): void

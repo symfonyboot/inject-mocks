@@ -11,9 +11,9 @@ use SilasYudi\InjectMocks\Tests\TestWithoutType\Classes\Service;
 
 class WithoutMockTypeTest extends TestCase
 {
-    /** @Mock */
+    #[Mock]
     private $dependency;
-    /** @InjectMocks */
+    #[InjectMocks]
     private Service $service;
 
     public function testWithoutMockType(): void

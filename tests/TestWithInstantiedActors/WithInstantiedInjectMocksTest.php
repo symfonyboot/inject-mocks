@@ -9,7 +9,7 @@ use SilasYudi\InjectMocks\Tests\TestWithInstantiedActors\Classes\Service;
 
 class WithInstantiedInjectMocksTest extends TestCase
 {
-    /** @InjectMocks */
+    #[InjectMocks]
     private Service $service;
 
     public function testWithInstantiedInjectMocksShouldOverrideThisInstance(): void

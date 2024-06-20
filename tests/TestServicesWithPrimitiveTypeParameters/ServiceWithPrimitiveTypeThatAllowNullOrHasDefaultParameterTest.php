@@ -5,15 +5,15 @@ namespace SilasYudi\InjectMocks\Tests\TestServicesWithPrimitiveTypeParameters;
 use DateTime;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
-use stdClass;
 use SilasYudi\InjectMocks\InjectMocks;
 use SilasYudi\InjectMocks\MockInjector;
 use SilasYudi\InjectMocks\Tests\TestServicesWithPrimitiveTypeParameters\Classes\Dependency;
 use SilasYudi\InjectMocks\Tests\TestServicesWithPrimitiveTypeParameters\Classes\ServiceWithPrimitiveTypeThatAllowNullOrHasDefaultParameter;
+use stdClass;
 
 class ServiceWithPrimitiveTypeThatAllowNullOrHasDefaultParameterTest extends TestCase
 {
-    /** @InjectMocks */
+    #[InjectMocks]
     private ServiceWithPrimitiveTypeThatAllowNullOrHasDefaultParameter $service;
 
     public function testServiceWithNotAutowiredPrimitiveTypeShouldUseDefaultParametersOrNull(): void

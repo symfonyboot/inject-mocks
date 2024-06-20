@@ -12,9 +12,9 @@ use SilasYudi\InjectMocks\Tests\TestWithInstantiedActors\Classes\Service;
 
 class WithInstantiedMockTest extends TestCase
 {
-    /** @Mock */
+    #[Mock]
     private Dependency $dependency;
-    /** @InjectMocks */
+    #[InjectMocks]
     private Service $service;
 
     public function testWithInstantiedMockShouldUseThisInstance(): void

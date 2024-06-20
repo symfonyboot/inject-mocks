@@ -12,7 +12,7 @@ use SilasYudi\InjectMocks\Tests\TestCombinationsOfAnnotations\Classes\Service;
 
 class WithoutInjectMocksAnnotationTest extends TestCase
 {
-    /** @Mock */
+    #[Mock]
     private DependencyA $dependencyA;
 
     private DependencyB $dependencyB;

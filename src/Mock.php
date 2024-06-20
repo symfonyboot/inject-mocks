@@ -2,9 +2,9 @@
 
 namespace SilasYudi\InjectMocks;
 
-/**
- * @Annotation
- */
+use Attribute;
+
+#[Attribute]
 class Mock
 {
 }
