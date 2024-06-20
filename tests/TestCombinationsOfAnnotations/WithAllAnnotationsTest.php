@@ -13,11 +13,11 @@ use SilasYudi\InjectMocks\Tests\TestCombinationsOfAnnotations\Classes\Service;
 
 class WithAllAnnotationsTest extends TestCase
 {
-    /** @Mock */
+    #[Mock]
     private DependencyA $dependencyA;
-    /** @Mock */
+    #[Mock]
     private DependencyB $dependencyB;
-    /** @InjectMocks */
+    #[InjectMocks]
     private Service $service;
 
     public function testWithAnnotationsShouldCreateRealInstanceForSubjectAndCreateMocksAndInjectInSubjectAndInTestCase(): void

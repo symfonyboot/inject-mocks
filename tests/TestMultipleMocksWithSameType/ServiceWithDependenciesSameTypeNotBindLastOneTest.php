@@ -12,11 +12,11 @@ use SilasYudi\InjectMocks\Tests\TestMultipleMocksWithSameType\Classes\Service;
 
 class ServiceWithDependenciesSameTypeNotBindLastOneTest extends TestCase
 {
-    /** @Mock */
+    #[Mock]
     private Dependency $dependencyOne;
-    /** @Mock */
+    #[Mock]
     private Dependency $dependencyTwo;
-    /** @InjectMocks */
+    #[InjectMocks]
     private Service $service;
 
     public function testServiceWithDependenciesSameTypeNotBindLastOne(): void

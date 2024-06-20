@@ -13,11 +13,11 @@ use SilasYudi\InjectMocks\Tests\TestCombinationsOfAnnotations\Classes\Service;
 
 class WithoutMockAnnotationTest extends TestCase
 {
-    /** @Mock */
+    #[Mock]
     private DependencyA $dependencyA;
 
     private DependencyB $dependencyB;
-    /** @InjectMocks */
+    #[InjectMocks]
     private Service $service;
 
     public function testWithoutMockAnnotationShouldAutoCreateMockAndInjectOnlyInTestSubject(): void

@@ -9,13 +9,13 @@ use SilasYudi\InjectMocks\MockInjector;
 
 class InjectMocksAnnotationInPrimitiveTypeTest extends TestCase
 {
-    /** @InjectMocks */
+    #[InjectMocks]
     private string $service;
 
     public function testWithoutInjectMocksType(): void
     {
         $this->expectException(MockInjectException::class);
-        $this->expectExceptionMessage('Primitive type is not allowed for @Mock or @InjectMocks.');
+        $this->expectExceptionMessage('Primitive type is not allowed for #Mock or #InjectMocks.');
         MockInjector::inject($this);
     }
 }

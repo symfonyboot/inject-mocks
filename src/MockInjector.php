@@ -2,7 +2,6 @@
 
 namespace SilasYudi\InjectMocks;
 
-use Doctrine\Common\Annotations\AnnotationReader;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 use ReflectionProperty;
@@ -44,7 +43,7 @@ class MockInjector
         $mocks = [];
 
         foreach ($properties as $property) {
-            $annotation = (new AnnotationReader())->getPropertyAnnotation($property, Mock::class);
+            $annotation = $property->getAttributes(Mock::class);
 
             if ($annotation) {
                 $type = self::getTypeName($property);
@@ -64,7 +63,7 @@ class MockInjector
     private static function processTestSubject(array $properties, array $mocks): ?TestActor
     {
         foreach ($properties as $property) {
-            $annotation = (new AnnotationReader())->getPropertyAnnotation($property, InjectMocks::class);
+            $annotation = $property->getAttributes(InjectMocks::class);
 
             if ($annotation) {
                 $type = self::getTypeName($property);
@@ -82,7 +81,7 @@ class MockInjector
             ->orElseThrow(new MockInjectException("The '{$property->getName()}' property must be typed."));
 
         if ($type->isBuiltin()) {
-            throw new MockInjectException('Primitive type is not allowed for @Mock or @InjectMocks.');
+            throw new MockInjectException('Primitive type is not allowed for #Mock or #InjectMocks.');
         }
 
         return $type->getName();
@@ -114,10 +113,7 @@ class MockInjector
     private static function injectActorInTestCase(TestActor $subject): void
     {
         $property = self::$testClass->getProperty($subject->getParameter());
-
-        if ($property) {
-            $property->setAccessible(true);
-            $property->setValue(self::$testCase, $subject->getInstance());
-        }
+        $property->setAccessible(true);
+        $property->setValue(self::$testCase, $subject->getInstance());
     }
 }
